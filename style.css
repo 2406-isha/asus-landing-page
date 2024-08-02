@@ -1,0 +1,216 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Text */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f5f5f5;
+    background-color: #2c3e50;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+/* Product Section */
+#product {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-top: 5px solid #e67e22;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.product-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.product-info ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.product-info ul li img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Features Section */
+#features {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+.feature {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #e67e22;
+}
+
+.feature h3 {
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #34495e;
+    padding: 60px 0;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+#contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 12px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #d35400;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #e67e22;
+}
